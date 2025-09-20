@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Unit Converter</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Unit Converter</h1>
+    <div class="input-group">
+      <input type="number" id="inputValue" placeholder="Enter value">
+      <select id="unitType">
+        <option value="length">Length</option>
+        <option value="weight">Weight</option>
+        <option value="temperature">Temperature</option>
+      </select>
+    </div>
+    <div class="unit-options" id="length-options">
+      <select id="length-from">
+        <option value="meters">Meters</option>
+        <option value="kilometers">Kilometers</option>
+        <option value="miles">Miles</option>
+        <option value="yards">Yards</option>
+        <option value="feet">Feet</option>
+        <option value="inches">Inches</option>
+      </select>
+      <select id="length-to">
+        <option value="meters">Meters</option>
+        <option value="kilometers">Kilometers</option>
+        <option value="miles">Miles</option>
+        <option value="yards">Yards</option>
+        <option value="feet">Feet</option>
+        <option value="inches">Inches</option>
+      </select>
+    </div>
+    <div class="unit-options" id="weight-options" style="display: none;">
+      <select id="weight-from">
+        <option value="kilograms">Kilograms</option>
+        <option value="grams">Grams</option>
+        <option value="pounds">Pounds</option>
+        <option value="ounces">Ounces</option>
+      </select>
+      <select id="weight-to">
+        <option value="kilograms">Kilograms</option>
+        <option value="grams">Grams</option>
+        <option value="pounds">Pounds</option>
+        <option value="ounces">Ounces</option>
+      </select>
+    </div>
+    <div class="unit-options" id="temperature-options" style="display: none;">
+      <select id="temperature-from">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+      <select id="temperature-to">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+    </div>
+    <button class="convert-btn" onclick="convert()">Convert</button>
+    <p id="result" class="result-text"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
